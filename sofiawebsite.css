@@ -169,11 +169,12 @@ header {
 #boxes {
   border-top: 5px solid #9093a5;
   background: #9093a5;
+  height: 70vh;
 }
 
 #boxes-title {
   text-align: center;
-  padding: 3vh;
+  padding: 10vh;
 }
 
 #boxes-p{
