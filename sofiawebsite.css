@@ -6,6 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: ;
 }
 
 html {
@@ -13,13 +14,20 @@ html {
 }
 
 body {
-  font-family: Forum;
+  font-weight: 600;
   background: white;
   text-align: center;
+  color: black;
+}
+
+a:hover{
+  cursor: pointer;
 }
 
 .logo-pic {
   margin: 0 auto;
+  padding: 5vh 3vh 3vh 3vh;
+  height: 30vh;
 }
 
 .section {
@@ -28,12 +36,54 @@ body {
   letter-spacing: 1px;
   word-spacing: 2px;
   line-height: 25px;
+  border-bottom: 5px solid #9093a5;
+  padding: 2vh;
 }
 
 .h3 {
-  font-family: Forum;
-  padding: 2.5vh;
+  font-family: "Amalfi Coast";
+  padding: 1.5vh;
+  font-size: 40px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.services-h3 {
+  padding-top: 5vh;
+  font-family: "Southland";
   font-size: 30px;
+}
+
+.elfsight-app-2280f0fc-d6dc-46dd-81ff-59eb4624caef {
+  font-weight: 600;
+  padding: 1.5vh;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#insta-feed{
+  background: black;
 }
 
 .section-p {
@@ -53,11 +103,6 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: Raleway;
-}
-
-.header-div {
-  padding: 3vh;
 }
 
 .nav-ul {
@@ -68,12 +113,24 @@ header {
 }
 
 .nav-a {
-  font-family: Raleway;
+  font-family: "Raleway";
   text-decoration: none;
   position: relative;
-  color: #232e2a;
   font-size: 16px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
 }
+
 
 .nav-a::before {
   content: "";
@@ -84,7 +141,15 @@ header {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #e9d2b1;
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #cea699 78%,
+    #b6887a 100%
+  );
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -102,49 +167,60 @@ header {
   */
 
 #boxes {
-  background: #232e2a;
-  color: #232e2a;
+  border-top: 5px solid #9093a5;
+  background: #9093a5;
 }
 
 #boxes-title {
   text-align: center;
-  border-bottom: 1px solid white;
+  padding: 3vh;
+}
+
+#boxes-p{
+  padding: 3vh;
 }
 
 #box-form-div {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5vw;
-}
-#boxes-div {
-  background: #e9d2b1;
-  width: 50%;
-  height: 500px;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1200px;
+  height: 40vh;
   line-height: 35px;
-  text-align: left;
+  text-align: center;
   color: white;
-  border-radius: 3px;
 }
+
 
 #form-div {
-  background: white;
+  background: #9093a5;
   width: 30%;
-  border-radius: 3px;
-}
-.button {
-  display: inline-block;
-  padding: 1vh 2.5vw;
-  background: #e9d2b1;
-  color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: gray 1px 1px 7px 0px;
-  transition: 500ms transform ease-in-out;
-  transform: scale(1);
 }
 
-.button:hover {
-  transform: scale(1.1);
+#form-button {
+  font-size: 40px;
+  font-family: "Amalfi Coast";
+  text-decoration: none;
+  color:white;
+  /*
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  */
+  margin: 3vh;
+}
+
+#form-button:hover{
+  text-decoration: underline;
 }
 
 /*SECTION 2 SERVICES*/
@@ -154,15 +230,44 @@ header {
   padding: 5vh;
   display: flex;
   justify-content: center;
+  background: white;
 }
 
 #services-intro {
-  background: #232e2a;
   color: white;
   width: 80vw;
-  margin: 10px;
+  margin: 0 auto;
   text-align: center;
   border-radius: 3px;
+  background: white;
+  color: black;
+}
+
+.services-img {
+  height: 250px;
+  width: 300px;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  filter: blur(3.5px);
+  transform: scale(1);
+}
+
+.services-img:hover{
+  animation: pulse 1s ease-in-out;
+  filter: none;
+}
+
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
 }
 
 #services-squares-div {
@@ -170,11 +275,44 @@ header {
   justify-content: center;
 }
 
+.services-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 320px;
+  background: white;
+  padding: 1vh 0px;
+  margin: 1vh;
+  border-radius: 2px;
+}
+
+.services-p {
+  color: black;
+  width: 300px;
+}
+
 h4 {
-  font-family: Raleway;
   color: black;
   font-size: 25px;
   padding: 1.5vh;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  width: 90vw;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
 }
 
 .services-li {
@@ -189,25 +327,15 @@ h4 {
   width: 25vw;
 }
 
-#services-button {
-  background: #232e2a;
-  color: white;
-  text-align: center;
-  margin: 3vh;
-  height: 6vh;
-  width: 15vw;
-}
-
 /*SECTION 3 ABOUT*/
 
 #about {
-  background: #232e2a;
-  padding: 5vh;
+  background: #9093a5;
+  color: #232e2a;
 }
 
 #about-div {
   display: flex;
-  width: 80vw;
   margin: 0 auto;
 }
 
@@ -223,7 +351,9 @@ h4 {
 #about-list {
   border-top: 1px #e9d2b1 solid;
   list-style: none;
-  text-align: center;
+  text-align: left;
+  padding: 1.5vw;
+  font-size: 25px;
 }
 
 #about-img {
@@ -234,48 +364,37 @@ h4 {
 
 /*SECTION 4 REVIEWS*/
 
-#testimonials-div {
-  width: 80vw;
+#testimonials {
+  background:white;
+}
+
+#testimonials-title{
+  padding: 3vh;
+}
+
+.yelp-reviews{
   margin: 0 auto;
+  width: 60vw;
+  max-height: 60vh;
+  padding: 5vh;
+
 }
 
-#testimonials-title,
-#testimonials-subtitle {
-  color: #232e2a;
+.review-button{
+  padding: 5vh;
 }
 
-#reviews {
-  color: white;
-  display: flex;
-  flex-direction: row;
-}
+/*
 
-.review-grid {
-  margin: 10px;
-}
-
-.testimonials-p {
-  background: #e9d2b1;
-  border-radius: 2px;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 1px;
-  transition: 500ms transform ease-in-out;
-  transform: scale(1);
-}
-
-.testimonials-p:hover {
-  transform: scale(1.03);
-}
-
-/*SECTION 5 GALLERY*/
+/*SECTION 5 GALLERY
 #gallery {
-  background: #232e2a;
+  background: #99cccc;
   color: white;
+  background: white;
+  color: black;
 }
 
 #gallery-div {
-  width: 80vw;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -293,17 +412,13 @@ h4 {
 .gallery-img:hover {
   opacity: 1;
 }
+*/
 
 /*SECTION 6 CONTACT*/
 
 #contact {
-  background: #e9d2b1;
   color: #232e2a;
-}
-
-#contact-title {
-  padding: 5vh;
-  border-bottom: 1px solid #232e2a;
+  background: white;
 }
 
 #logo-div {
@@ -311,25 +426,48 @@ h4 {
   justify-content: space-evenly;
   margin: 0 auto;
   width: 80vw;
-  padding-top: 80px;
+  padding: 80px 0;
 }
+
 #contact-p {
   color: white;
-  width: 30vw;
+  height: 80px;
+  width: 40vw;
+  color: black;
 }
+
 .contact-logo {
   color: white;
-  transform: scale(1.5);
   text-align: left;
   height: 80px;
+  padding: 1.5vw;
+  font-size: 25px;
+}
+
+i {
+  transform: scale(1.5);
+  padding: 0px 10px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #f2e9e6 65%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .contact-link {
-  color: #232e2a;
+  color: black;
 }
 
 .contact-link:hover {
-  color: white;
+  color: #9093a5;
 }
 
 .inline {
@@ -341,4 +479,6 @@ h4 {
 .footer {
   text-align: left;
   color: #e9d2b1;
+  color: black;
+  padding: 10px;
 }
