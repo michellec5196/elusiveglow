@@ -6,7 +6,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: ;
 }
 
 html {
@@ -19,6 +18,9 @@ body {
   text-align: center;
   color: black;
   font-size: 20px;
+  font-family: "Source Serif Pro";
+  letter-spacing: -1px;
+  word-spacing: 2px;
 }
 
 a:hover {
@@ -34,28 +36,9 @@ a:hover {
 .section {
   margin: 0 auto;
   width: auto;
-  letter-spacing: 1px;
   line-height: 25px;
   border-bottom: 5px solid #9093a5;
   padding: 50px;
-}
-
-.title {
-  font-family: "Amalfi Coast";
-  padding: 50px;
-  font-size: 40px;
-  color: white;
-  background-image: linear-gradient(
-    to right,
-    #b6887a 0,
-    #cea699 22%,
-    #e4c1b6 45%,
-    #e6cbc4 50%,
-    #cea699 78%,
-    #b6887a 100%
-  );
-  color: transparent;
-  -webkit-background-clip: text;
 }
 
 a {
@@ -80,10 +63,10 @@ header {
 }
 
 .nav-a {
-  font-family: "Raleway";
   text-decoration: none;
   position: relative;
   font-size: 16px;
+  letter-spacing: -2px;
   color: white;
   background-image: linear-gradient(
     to right,
@@ -152,11 +135,7 @@ header {
 }
 
 #form-button {
-  font-size: 30px;
-  font-family: "Amalfi Coast";
-  text-decoration: none;
-  color: white;
-  padding: 3vh;
+  margin: 3vh;
 }
 
 #form-button:hover {
@@ -172,10 +151,6 @@ header {
   background: white;
 }
 
-#services-title {
-  padding: 50px;
-}
-
 .services-box {
   display: flex;
   flex-direction: column;
@@ -185,11 +160,11 @@ header {
   transform: scale(1);
   position: relative;
   text-align: center;
+  transition: 0.5s ease-in-out;
 }
 
 .services-box:hover {
   animation: pulse 1s ease-in-out;
-  filter: none;
 }
 
 @keyframes pulse {
@@ -225,14 +200,17 @@ header {
   border-radius: 50%;
   height: 250px;
   width: 300px;
-  transition: 0.5s ease-in-out;
   filter: blur(3.5px);
 }
 
+.services-img:hover {
+  filter: none;
+}
+
 .services-h3 {
-  font-family: "Amalfi coast";
   position: absolute;
   z-index: 100;
+  letter-spacing: -2px;
 }
 
 .services-link {
@@ -263,18 +241,7 @@ header {
   background: black;
 }
 
-/*SECTION 4 REVIEWS*/
-
-#testimonials {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#testimonials-title {
-  padding: 3vh;
-}
+/*SECTION 4 REVIEWS
 
 .yelp-reviews {
   height: 233.854px;
@@ -286,6 +253,8 @@ header {
   padding: 5vh;
 }
 
+*/
+
 /*SECTION 5 CONTACT*/
 
 #contact {
@@ -293,6 +262,42 @@ header {
   background: white;
 }
 
+.contact-div {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact-p {
+  padding: 10px;
+}
+
+.contact-link {
+  color: black;
+}
+
+i {
+  transform: scale(1.3);
+  padding: 0px 5px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #f2e9e6 65%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.contact-link:hover {
+  color: #9093a5;
+}
+/*
 #logo-div {
   display: flex;
   justify-content: space-evenly;
@@ -317,31 +322,14 @@ header {
   font-size: 25px;
 }
 
-i {
-  transform: scale(1.5);
-  padding: 0px 10px;
-  color: white;
-  background-image: linear-gradient(
-    to right,
-    #b6887a 0,
-    #cea699 22%,
-    #e4c1b6 45%,
-    #e6cbc4 50%,
-    #f2e9e6 65%,
-    #cea699 78%,
-    #b6887a 100%
-  );
-  color: transparent;
-  -webkit-background-clip: text;
-}
+
 
 .contact-link {
   color: black;
 }
 
-.contact-link:hover {
-  color: #9093a5;
-}
+
+*/
 
 /*FOOTER*/
 
@@ -393,10 +381,6 @@ i {
     flex-direction: column;
     text-align: left;
     margin-bottom: 20vh;
-  }
-
-  .title {
-    line-height: 40px;
   }
 
   .services-div {
