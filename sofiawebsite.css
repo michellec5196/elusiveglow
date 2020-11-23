@@ -375,6 +375,10 @@ i {
   .contact-link {
     font-size: 16px;
   }
+
+  i {
+    transform: scale(1);
+  }
   /*FOOTER*/
   .footer {
     font-size: 12px;
