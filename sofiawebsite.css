@@ -65,6 +65,8 @@ header {
   justify-content: space-around;
   padding: 1vh;
   list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .nav-a {
@@ -264,7 +266,7 @@ i {
 
 /*FOOTER*/
 
-.footer {
+footer {
   text-align: left;
   color: black;
   padding: 10px;
@@ -273,9 +275,18 @@ i {
 /*MEDIA QUERY BIG SCREENS*/
 
 @media only screen and (min-width: 2100px) {
+  .section {
+    width: 100%;
+  }
+
+  .section-div {
+    width: 55vw;
+    margin: 0 auto;
+  }
+
   .services-img {
-    height: 400px;
-    width: 450px;
+    height: 300px;
+    width: 350px;
   }
 
   .logo-pic {
@@ -285,6 +296,10 @@ i {
 
   .title {
     transform: scale(1.3);
+  }
+
+  #footer {
+    font-size: 12px;
   }
 }
 
@@ -396,7 +411,7 @@ i {
     transform: scale(1);
   }
   /*MEDIA PHONE FOOTER*/
-  .footer {
+  #footer {
     font-size: 12px;
   }
 }
