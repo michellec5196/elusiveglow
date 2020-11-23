@@ -30,7 +30,7 @@ a:hover {
 .logo-pic {
   margin: 0 auto;
   padding: 5vh;
-  width: 50vw;
+  width: 60vw;
 }
 
 .section {
@@ -229,11 +229,13 @@ header {
 .contact-div {
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
+  padding: 1vh;
+  margin: 0 auto;
 }
 
 .contact-p {
   padding: 10px;
+  font-size: 24px;
 }
 
 .contact-link {
@@ -276,10 +278,6 @@ i {
     width: 500px;
   }
 
-  #book-me {
-    padding: 2vh 0px;
-  }
-
   #logo-div {
     justify-content: space-evenly;
   }
@@ -294,39 +292,91 @@ i {
   }
 }
 
-/*MEDIA QUERY SMALLLLL&CELL PHONES*/
+/*MEDIA QUERY CELL PHONES*/
 
 @media only screen and (max-width: 450px) {
+  /*GENERAL*/
   body {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  .section {
+    padding: 10px 0px;
+    width: 100%;
+  }
+
+  .logo-pic {
     width: 100vw;
+    padding: 0px;
   }
 
+  .title {
+    height: 100px;
+    max-width: 315px;
+  }
+
+  .section-p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /*NAV BAR*/
   .nav-ul {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 20vh;
+    width: 100%;
   }
 
-  .services-div {
-    display: flex;
-    flex-direction: column;
+  .nav-a {
+    font-size: 12px;
   }
 
+  /*HOME*/
+  .xoxosofia {
+    height: 100px;
+    max-width: 315px;
+  }
+
+  /*SERVICES*/
   .row-1,
   .row-2 {
     display: flex;
     flex-direction: column;
-  }
-  .services-img {
-    height: 30vh;
-    width: 60vw;
+    margin: 0 auto;
   }
 
-  .yelp-reviews {
-    width: 90vw;
+  .services-img {
+    height: 20vh;
+    width: 50vw;
+  }
+
+  .services-link {
+    font-size: 18px;
+  }
+  /*INSTAGRAM*/
+
+  /*FEEDBACK*/
+
+  /*CONTACT*/
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-line {
+    padding: 10px;
+  }
+
+  .contact-p {
+    font-size: 18px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+  /*FOOTER*/
+  .footer {
+    font-size: 12px;
   }
 }
