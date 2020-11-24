@@ -198,21 +198,7 @@ header {
 /*SECTION 3 instagram*/
 
 .elfsight-app-2280f0fc-d6dc-46dd-81ff-59eb4624caef {
-  font-weight: 600;
   padding: 1.5vh;
-  text-transform: uppercase;
-  color: white;
-  background-image: linear-gradient(
-    to right,
-    #b6887a 0,
-    #cea699 22%,
-    #e4c1b6 45%,
-    #e6cbc4 50%,
-    #cea699 78%,
-    #b6887a 100%
-  );
-  color: transparent;
-  -webkit-background-clip: text;
 }
 
 #insta-feed {
@@ -283,8 +269,8 @@ footer {
   }
 
   .services-img {
-    height: 300px;
-    width: 350px;
+    height: 250px;
+    width: 300px;
   }
 
   .logo-pic {
@@ -296,14 +282,15 @@ footer {
     transform: scale(1.3);
   }
 
-  #footer {
+  .footer-p {
     font-size: 12px;
   }
 }
 
-/*MEDIA QUERY SMALL SCREEN*/
+/*MEDIA QUERY TABLET SCREEN*/
 
 @media only screen and (max-width: 2100px) {
+  /*MEDIA TABLET GENERAL*/
   body {
     font-size: 16px;
   }
@@ -316,19 +303,19 @@ footer {
   .title {
     max-width: 100vw;
   }
-
+  /*MEDIA TABLET NAV*/
   .nav-a {
     font-size: 14px;
   }
+  /*MEDIA TABLET SERVICES*/
   .services-img {
     height: 125px;
     width: 175px;
   }
-
   .services-h3 {
     font-size: 18px;
   }
-
+  /*MEDIA TABLET CONTACT*/
   .contact-p {
     font-size: 18px;
   }
@@ -382,6 +369,22 @@ footer {
   }
 
   /*MEDIA PHONE SERVICES*/
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .services-img:hover {
+    filter: blur(3.2px);
+  }
+
   .row-1,
   .row-2 {
     display: flex;
