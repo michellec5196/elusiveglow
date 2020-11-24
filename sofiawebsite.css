@@ -41,6 +41,11 @@ a:hover {
   padding: 50px;
 }
 
+.title {
+  padding: 10px;
+  width: 165px;
+}
+
 a {
   text-decoration: none;
 }
@@ -49,6 +54,20 @@ a {
   color: white;
   text-decoration: underline;
 }
+
+/* PINK GRADIENT 
+  background-image: linear-gradient(
+    to right,
+    #b6887a 0,
+    #cea699 22%,
+    #e4c1b6 45%,
+    #e6cbc4 50%,
+    #cea699 78%,
+    #b6887a 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+*/
 
 /*Making header centered
   *font family for header
@@ -196,7 +215,6 @@ header {
 }
 
 /*SECTION 3 instagram*/
-
 .elfsight-app-2280f0fc-d6dc-46dd-81ff-59eb4624caef {
   padding: 1.5vh;
 }
@@ -278,7 +296,8 @@ footer {
     height: 350px;
   }
 
-  .title {
+  .title,
+  .welcome-title {
     transform: scale(1.3);
   }
 
@@ -300,7 +319,8 @@ footer {
     height: 250px;
   }
 
-  .title {
+  .title,
+  .welcome-title {
     max-width: 100vw;
   }
   /*MEDIA TABLET NAV*/
