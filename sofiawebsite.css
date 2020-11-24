@@ -274,7 +274,7 @@ footer {
   padding: 0px;
 }
 
-/*MEDIA QUERY BIG SCREENS*/
+/*MEDIA QUERY BIG/LAPTOP SCREENS*/
 
 @media only screen and (min-width: 2100px) {
   .section {
@@ -308,7 +308,7 @@ footer {
 
 /*MEDIA QUERY TABLET SCREEN*/
 
-@media only screen and (max-width: 2100px) {
+@media only screen and (max-width: 1100px) {
   /*MEDIA TABLET GENERAL*/
   body {
     font-size: 16px;
