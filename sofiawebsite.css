@@ -55,6 +55,11 @@ a {
   text-decoration: underline;
 }
 
+.gift-card {
+  color: #3f0017;
+  text-decoration: underline;
+}
+
 /* PINK GRADIENT 
   background-image: linear-gradient(
     to right,
