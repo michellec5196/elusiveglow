@@ -55,6 +55,10 @@ a {
   text-decoration: underline;
 }
 
+#giftcard-p {
+  color: black;
+}
+
 .gift-card {
   color: #3f0017;
   text-decoration: underline;
